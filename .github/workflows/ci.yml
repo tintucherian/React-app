@@ -27,6 +27,4 @@ jobs:
         run: npm run build 
       - name: Deploy to Staging
         if: github.event_name == 'push'
-        run: | 
-          npm ci,
-          npm start
+        run: npm start
