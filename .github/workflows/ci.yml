@@ -28,7 +28,6 @@ jobs:
       - name: Deploy to Staging
         if: github.event_name == 'push'
         run: |
-          npm,
           sudo apt install npm,
           npm,
           npm start
